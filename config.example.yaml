@@ -1,0 +1,7 @@
+registries:
+  npmjs:
+    type: upstream
+    url: https://registry.npmjs.org/
+    public: true
+
+defaultRegistry: npmjs

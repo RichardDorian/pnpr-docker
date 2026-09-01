@@ -1,0 +1,13 @@
+services:
+  pnpr:
+    build:
+      args:
+        PNPR_VERSION: 0.1.0-alpha.10
+    ports:
+      - 7677:7677/tcp
+    volumes:
+      - ./config.example.yaml:/etc/pnpr/config.yaml:ro
+      - pnpr:/etc/pnpr/storage
+
+volumes:
+  pnpr:
